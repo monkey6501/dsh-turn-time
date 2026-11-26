@@ -1,5 +1,7 @@
 # dsh-turn-time
 
+English | [中文](README.zh.md)
+
 Per-task wall-clock timing for the DeepSeek Harness Web composer.
 
 ## What it shows
