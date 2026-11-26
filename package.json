@@ -1,6 +1,6 @@
 {
   "name": "dsh-turn-time",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Shows how long the current task took, and the session total, in a pill below the DSH composer; clicking it splits the task into model time, tool time and a step count.",
   "type": "module",
   "license": "MIT",

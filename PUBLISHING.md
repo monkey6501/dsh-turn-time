@@ -69,7 +69,7 @@ CI runs, in order: entry count → `dsh.bundle` present in the repo's
 ## 4. Releasing an update
 
 Bump `version` in `package.json`, `npm publish`, and tag the commit
-(`git tag v1.0.1 && git push --tags`). The market compares the npm version (or
+(`git tag v1.0.3 && git push --tags`). The market compares the npm version (or
 the pinned commit) and shows an update on its own; the catalog entry needs no
 change.
 

@@ -68,35 +68,6 @@ checkpointed state stays tiny instead of growing with the log.
 Disabling the bundle in **Plugins** removes both the pill and the `taskTime`
 projection; no other UI reads it.
 
-## Publishing to the plugin market
-
-The community market (`dshmarket`) reads the [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin)
-catalog. Listing it takes one pull request that adds one file,
-`data/plugins/<owner>__<repo>.yml`:
-
-```yaml
-url: https://github.com/monkey6501/dsh-turn-time
-name: monkey6501/dsh-turn-time
-category: usage
-icon: https://raw.githubusercontent.com/monkey6501/dsh-turn-time/main/assets/icon-180.png
-description:
-  en: "Shows how long the current task took and the session total below the composer, with the task's model time, tool time and step count."
-  zh: 在输入框下方显示本轮任务耗时与本会话累计耗时，并可展开查看本轮的模型用时、工具用时和步骤数。
-```
-
-Before submitting:
-
-1. Publish to npm (`npm publish`) so stores can install a prebuilt package and
-   show a download count. Only new package names need the extra check that
-   `dist-tags.latest` on `registry.npmjs.org` matches the published version and
-   that its `dist.tarball` actually downloads.
-2. Keep the repository public and at least a day old, and add the `dsh-plugin`
-   topic.
-3. The storefront tile is `assets/icon-180.png` (a GitHub-hosted raster image,
-   as the catalog requires). `icon.svg` is the in-app plugin icon.
-
-Step-by-step commands live in [PUBLISHING.md](PUBLISHING.md).
-
 ---
 
 ## 中文说明
@@ -151,6 +122,3 @@ dsh plugin --profile web add dsh-turn-time
 
 在 **插件** 里停用这个 bundle，标签和 `taskTime` 投影都会一起消失，没有别的界面读它。
 
-### 发布到插件市场
-
-社区市场（`dshmarket`）读的是 [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) 目录，上架只提一个 PR、加一个文件 `data/plugins/<owner>__<repo>.yml`——具体 YAML 见上面 [Publishing to the plugin market](#publishing-to-the-plugin-market) 一节（中英描述都在里面），逐条命令见 [PUBLISHING.md](PUBLISHING.md)。
