@@ -76,6 +76,7 @@ catalog. Listing it takes one pull request that adds one file,
 url: https://github.com/monkey6501/dsh-turn-time
 name: monkey6501/dsh-turn-time
 category: usage
+icon: https://raw.githubusercontent.com/monkey6501/dsh-turn-time/main/assets/icon-180.png
 description:
   en: "Shows how long the current task took and the session total below the composer, with the task's model time, tool time and step count."
   zh: 在输入框下方显示本轮任务耗时与本会话累计耗时，并可展开查看本轮的模型用时、工具用时和步骤数。
@@ -89,6 +90,7 @@ Before submitting:
    that its `dist.tarball` actually downloads.
 2. Keep the repository public and at least a day old, and add the `dsh-plugin`
    topic.
-3. The storefront tile must be a GitHub-hosted **raster** image (`icon:` in the
-   entry). The SVG here is the in-app plugin icon; without a PNG the card falls
-   back to the owner's avatar.
+3. The storefront tile is `assets/icon-180.png` (a GitHub-hosted raster image,
+   as the catalog requires). `icon.svg` is the in-app plugin icon.
+
+Step-by-step commands live in [PUBLISHING.md](PUBLISHING.md).
