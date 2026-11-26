@@ -4,6 +4,8 @@ The geometry is the same stopwatch as ``icon.svg`` (a 36-unit canvas), scaled
 to 180px: every source coordinate is multiplied by ``UNIT``.
 """
 
+from pathlib import Path
+
 from PIL import Image, ImageDraw
 
 UNIT = 5          # 36-unit canvas -> 180px
@@ -53,5 +55,5 @@ draw.rounded_rectangle(
 draw.rectangle([px(17.2), px(8.6), px(18.8), px(11.2)], fill=BLUE)
 
 image = image.resize((SIZE, SIZE), Image.LANCZOS)
-image.save(r"D:\Models\DSH\plugin\dsh-turn-time\assets\icon-180.png", "PNG", optimize=True)
+image.save(Path(__file__).with_name("icon-180.png"), "PNG", optimize=True)
 print("written", image.size, image.mode)
