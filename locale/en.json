@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Task time",
+    "description": "Adds a pill below the composer that reads how long the current task took, and the session total beside it. Clicking it shows the task's model time, tool time and step count, the session total with its closed task count, and a one-line total for each of the last ten tasks."
+  }
+}
